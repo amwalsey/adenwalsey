@@ -48,16 +48,16 @@ a {
 .hero h1 {
   margin: 0;
   text-align: center;
-  font-size: clamp(5.2rem, 11vw, 9rem);
+  font-size: clamp(3.4rem, 7vw, 6rem);
   line-height: 0.9;
   font-weight: 500;
   letter-spacing: -0.075em;
 }
 
 .subtitle {
-  margin: 72px 0 56px;
+  margin: 48px 0 40px;
   text-align: center;
-  font-size: clamp(2rem, 3.3vw, 3.4rem);
+  font-size: clamp(1.3rem, 2.2vw, 2.2rem);
   line-height: 1.02;
   font-weight: 400;
   color: var(--text);
@@ -82,7 +82,7 @@ a {
   text-decoration: none;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: clamp(1.7rem, 2.4vw, 2rem);
+  font-size: clamp(1.2rem, 1.6vw, 1.4rem);
   line-height: 1;
   font-weight: 400;
   letter-spacing: -0.045em;
