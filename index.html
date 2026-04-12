@@ -4,43 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aden Walsey</title>
-
-  <!-- THIS IS THE IMPORTANT LINE -->
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <main class="page">
 
-  <main class="container">
-
-    <header class="hero">
+    <section class="hero">
       <h1>Aden Walsey</h1>
+      <p class="subtitle">Engineering Portfolio</p>
 
-      <p class="tagline">
-        Mechanical engineer focused on design, manufacturing, and performance systems.
+      <nav class="pill-nav">
+        <a href="#about" class="pill">About Me</a>
+        <a href="#projects" class="pill">Projects</a>
+        <a href="#cv" class="pill">CV</a>
+      </nav>
+    </section>
+
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <p>
+        I’m a mechanical engineering student focused on design, manufacturing, and performance systems.
+        My interests include product development, simulation, prototyping, and building clean, functional systems.
       </p>
-    </header>
+    </section>
 
-    <section class="projects">
+    <section id="projects" class="content-section">
+      <h2>Projects</h2>
 
-      <a href="turbine.html" class="project">
-        <h2>Wind Tunnel Blade Optimization</h2>
-        <p>Designing high-efficiency turbine blades under structural constraints.</p>
-      </a>
+      <div class="project-list">
+        <a href="turbine.html" class="project-item">
+          <h3>Wind Tunnel Blade Optimization</h3>
+          <p>Designing high-efficiency turbine blades under structural constraints.</p>
+        </a>
 
-      <a href="everseat.html" class="project">
-        <h2>EverSeat Modular System</h2>
-        <p>A single child seat system replacing multiple stages.</p>
-      </a>
+        <a href="everseat.html" class="project-item">
+          <h3>EverSeat Modular System</h3>
+          <p>A single child seat system replacing multiple stages.</p>
+        </a>
 
-      <a href="bike.html" class="project">
-        <h2>Bicycle Frame Analysis</h2>
-        <p>Optimizing stiffness and performance through simulation.</p>
-      </a>
+        <a href="bike.html" class="project-item">
+          <h3>Bicycle Frame Analysis</h3>
+          <p>Optimizing stiffness and performance through simulation.</p>
+        </a>
+      </div>
+    </section>
 
+    <section id="cv" class="content-section">
+      <h2>CV</h2>
+      <p>
+        Add your resume link, education, experience, and selected skills here.
+      </p>
     </section>
 
   </main>
-
 </body>
 </html>

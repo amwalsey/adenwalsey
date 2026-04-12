@@ -1,30 +1,21 @@
 :root {
-  --bg: #FFFF00;
-  --text: #f3f1ee;
-  --muted: #b7b1b8;
-  --accent: #c7c0c8;
-
-  --page-left: 72px;
-  --page-top: 72px;
-  --content-width: 980px;
-
-  --name-size: 7.5rem;
-  --tagline-size: 1.35rem;
-  --project-title-size: 2.9rem;
-  --project-text-size: 1.2rem;
+  --bg: #33333;
+  --text: #f2efea;
+  --muted: #a7a1aa;
+  --accent: #ddc8e0;
+  --max-width: 1100px;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
   background: var(--bg);
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -32,88 +23,134 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-.container {
-  width: min(var(--content-width), calc(100vw - 2 * var(--page-left)));
-  margin-left: var(--page-left);
-  padding-top: var(--page-top);
-  padding-bottom: 120px;
+.page {
+  width: min(calc(100% - 64px), var(--max-width));
+  margin: 0 auto;
+  padding: 48px 0 120px;
 }
 
 .hero {
-  margin-bottom: 140px;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 12px;
 }
 
-h1 {
-  margin: 0 0 28px 0;
-  font-size: var(--name-size);
+.hero h1 {
+  margin: 0;
+  font-size: clamp(4.5rem, 10vw, 8.5rem);
   line-height: 0.9;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -0.07em;
 }
 
-.tagline {
-  margin: 0;
-  max-width: 720px;
-  font-size: var(--tagline-size);
-  line-height: 1.18;
-  color: var(--muted);
-  letter-spacing: -0.03em;
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
-}
-
-.project {
-  display: block;
-  text-decoration: none;
+.subtitle {
+  margin: 72px 0 72px;
+  text-align: center;
+  font-size: clamp(1.8rem, 3vw, 3.4rem);
+  line-height: 1.1;
   color: var(--text);
-  transition: opacity 0.18s ease, color 0.18s ease;
+  letter-spacing: -0.05em;
 }
 
-.project:hover {
+.pill-nav {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  min-width: 220px;
+  padding: 22px 36px;
+  border: 2px solid var(--accent);
+  border-radius: 999px;
   color: var(--accent);
-  opacity: 0.92;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.15rem;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-.project h2 {
-  margin: 0 0 8px 0;
-  font-size: var(--project-title-size);
-  line-height: 0.98;
-  font-weight: 600;
-  letter-spacing: -0.06em;
+.pill:hover {
+  background: rgba(199, 192, 200, 0.08);
+  transform: translateY(-2px);
 }
 
-.project p {
+.content-section {
+  padding: 120px 0 40px;
+  border-top: 1px solid rgba(199, 192, 200, 0.18);
+}
+
+.content-section h2 {
+  margin: 0 0 28px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 0.95;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+
+.content-section p {
   margin: 0;
   max-width: 760px;
-  font-size: var(--project-text-size);
-  line-height: 1.3;
+  font-size: 1.2rem;
+  line-height: 1.45;
   color: var(--muted);
-  letter-spacing: -0.02em;
 }
 
-a {
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-top: 28px;
+}
+
+.project-item {
+  display: block;
+  text-decoration: none;
   color: inherit;
+  padding: 6px 0;
+  transition: opacity 0.2s ease, color 0.2s ease;
 }
 
-@media (max-width: 900px) {
-  :root {
-    --page-left: 28px;
-    --page-top: 36px;
-    --name-size: 4.8rem;
-    --tagline-size: 1.1rem;
-    --project-title-size: 2rem;
-    --project-text-size: 1rem;
+.project-item:hover {
+  color: var(--accent);
+  opacity: 0.95;
+}
+
+.project-item h3 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+
+.project-item p {
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 700px) {
+  .page {
+    width: min(calc(100% - 32px), var(--max-width));
+    padding-top: 28px;
   }
 
-  .hero {
-    margin-bottom: 96px;
+  .subtitle {
+    margin: 48px 0 48px;
   }
 
-  .projects {
-    gap: 52px;
+  .pill {
+    min-width: 100%;
+  }
+
+  .content-section {
+    padding-top: 90px;
+  }
+
+  .project-item h3 {
+    font-size: 1.5rem;
   }
 }
