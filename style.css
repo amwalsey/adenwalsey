@@ -1,21 +1,30 @@
 :root {
   --bg: #0b0b0b;
-  --text: #f5f5f5;
-  --muted: #9a9a9a;
-  --accent: #c7c0c8;
+  --text: #f3f1ee;
+  --muted: #b7b1b8;
+  --accent: #cfc6d1;
+
+  --page-left: 72px;
+  --page-top: 72px;
+  --content-width: 980px;
+
+  --name-size: 7.5rem;
+  --tagline-size: 1.35rem;
+  --project-title-size: 2.9rem;
+  --project-text-size: 1.2rem;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
 body {
-  margin: 0;
   background: var(--bg);
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -23,197 +32,88 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-main,
-section,
-header,
-footer,
-div {
-  margin: 0;
-  padding: 0;
-}
-
 .container {
-  width: 100%;
-  max-width: 760px;
-  margin-left: 88px;
-  padding: 120px 0 140px;
+  width: min(var(--content-width), calc(100vw - 2 * var(--page-left)));
+  margin-left: var(--page-left);
+  padding-top: var(--page-top);
+  padding-bottom: 120px;
 }
 
 .hero {
-  margin-bottom: 120px;
+  margin-bottom: 140px;
 }
 
 h1 {
-  margin: 0 0 24px 0;
-  font-size: 5.5rem;
-  line-height: 0.95;
+  margin: 0 0 28px 0;
+  font-size: var(--name-size);
+  line-height: 0.9;
   font-weight: 600;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.07em;
 }
 
 .tagline {
   margin: 0;
-  max-width: 560px;
-  font-size: 1.3rem;
-  line-height: 1.35;
+  max-width: 720px;
+  font-size: var(--tagline-size);
+  line-height: 1.18;
   color: var(--muted);
+  letter-spacing: -0.03em;
 }
 
 .projects {
   display: flex;
   flex-direction: column;
-  gap: 56px;
+  gap: 72px;
 }
 
-.project,
-.projects a {
+.project {
   display: block;
-  color: var(--text);
   text-decoration: none;
-  transition: color 0.2s ease, opacity 0.2s ease;
+  color: var(--text);
+  transition: opacity 0.18s ease, color 0.18s ease;
 }
 
-.project:hover,
-.projects a:hover {
+.project:hover {
   color: var(--accent);
+  opacity: 0.92;
 }
 
-.project h2,
-.projects h2 {
-  margin: 0 0 10px 0;
-  font-size: 2rem;
-  line-height: 1.05;
+.project h2 {
+  margin: 0 0 8px 0;
+  font-size: var(--project-title-size);
+  line-height: 0.98;
   font-weight: 600;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.06em;
 }
 
-.project p,
-.projects p {
+.project p {
   margin: 0;
-  max-width: 620px;
-  font-size: 1.05rem;
-  line-height: 1.45;
+  max-width: 760px;
+  font-size: var(--project-text-size);
+  line-height: 1.3;
   color: var(--muted);
+  letter-spacing: -0.02em;
 }
 
 a {
   color: inherit;
 }
 
-a:hover {
-  color: var(--accent);
-}
-
-.back-link {
-  display: inline-block;
-  margin-bottom: 56px;
-  color: var(--muted);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.back-link:hover {
-  color: var(--accent);
-}
-
-h2 {
-  margin: 72px 0 14px 0;
-  font-size: 1.35rem;
-  line-height: 1.1;
-  font-weight: 600;
-  letter-spacing: -0.03em;
-}
-
-p {
-  margin: 0;
-  max-width: 640px;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: var(--text);
-}
-
-p + p {
-  margin-top: 18px;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-hr {
-  border: none;
-  height: 1px;
-  margin: 64px 0;
-  background: var(--accent);
-  opacity: 0.2;
-}
-
-::selection {
-  background: var(--accent);
-  color: var(--bg);
-}
-
 @media (max-width: 900px) {
-  .container {
-    margin-left: 48px;
-    margin-right: 24px;
-    padding: 96px 0 120px;
-  }
-
-  h1 {
-    font-size: 4.4rem;
-  }
-
-  .tagline {
-    font-size: 1.15rem;
-    max-width: 520px;
-  }
-
-  .project h2,
-  .projects h2 {
-    font-size: 1.75rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .container {
-    margin-left: 24px;
-    margin-right: 20px;
-    padding: 72px 0 96px;
+  :root {
+    --page-left: 28px;
+    --page-top: 36px;
+    --name-size: 4.8rem;
+    --tagline-size: 1.1rem;
+    --project-title-size: 2rem;
+    --project-text-size: 1rem;
   }
 
   .hero {
-    margin-bottom: 84px;
-  }
-
-  h1 {
-    font-size: 3.2rem;
-    line-height: 0.98;
-  }
-
-  .tagline {
-    font-size: 1.05rem;
-    line-height: 1.45;
+    margin-bottom: 96px;
   }
 
   .projects {
-    gap: 40px;
-  }
-
-  .project h2,
-  .projects h2 {
-    font-size: 1.45rem;
-  }
-
-  .project p,
-  .projects p,
-  p {
-    font-size: 1rem;
-  }
-
-  h2 {
-    margin-top: 56px;
+    gap: 52px;
   }
 }
