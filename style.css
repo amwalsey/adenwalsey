@@ -608,3 +608,25 @@ a {
     min-height: 220px;
   }
 }
+
+
+.project-img-full {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+}
+
+.project-figure {
+  display: flex;
+  justify-content: center;
+}
+
+
+.project-figure-grid.two-up {
+  gap: 32px;
+}
+
+.wide-figure img {
+  max-width: 600px;
+}
