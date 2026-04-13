@@ -139,6 +139,7 @@ a {
   object-fit: cover;
   display: block;
   object-position: center 25%; /* 👈 this is the key */
+  transform: scale(1.1);
 }
 
 .about-text {
