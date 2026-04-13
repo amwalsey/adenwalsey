@@ -1,9 +1,9 @@
 :root {
-  --bg: #2a2a2a;
-  --text: #f2efea;
-  --muted: #a7a1aa;
-  --accent: #ddc8e0;
-  --max-width: 1180px;
+  --bg: #e6e6e6;        /* cool light grey */
+  --text: #111111;      /* near-black (better than pure black) */
+  --muted: #6f6f6f;     /* secondary text */
+  --accent: #cbb6d4;    /* your lilac */
+  --max-width: 1100px;
 }
 
 * {
