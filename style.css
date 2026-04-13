@@ -612,19 +612,20 @@ a {
 
 .project-img-full {
   width: 100%;
-  max-width: 420px;
+  max-width: 780px;
   height: auto;
   display: block;
 }
 
 .project-figure {
-  display: flex;
-  justify-content: center;
+  margin-top: 24px;
 }
 
 
 .project-figure-grid.two-up {
-  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 780px;   /* 👈 keeps them within text width */
 }
 
 .wide-figure img {
