@@ -644,3 +644,15 @@ a {
 .wide-figure img {
   max-width: 600px;
 }
+
+
+.project-hero-image {
+  margin-top: 32px;
+  max-width: 780px;   /* match text width */
+}
+
+.project-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
