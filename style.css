@@ -623,9 +623,22 @@ a {
 
 
 .project-figure-grid.two-up {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  max-width: 780px;   /* 👈 keeps them within text width */
+  max-width: 780px;
+}
+
+/* make both image containers same height */
+.project-figure-grid.two-up .project-figure {
+  height: 260px;   /* 👈 adjust this */
+}
+
+/* make images fill that height cleanly */
+.project-figure-grid.two-up img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* 👈 key line */
 }
 
 .wide-figure img {
