@@ -1,38 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Turbine Blade Design</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wind Tunnel Blade Optimization — Aden Walsey</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="container">
+  <main class="page project-page">
 
-    <a href="index.html">← Back</a>
+    <section class="content-section project-hero-section">
+      <div class="project-header">
+        <div>
+          <p class="project-meta">MAE 4272 · Fluids and Heat Transfer Laboratory</p>
 
-    <h1>Turbine Blade Design</h1>
+          <h1>Wind Tunnel Blade Optimization</h1>
 
-    <p>
-      Designed and tested turbine blades for Cornell’s wind tunnel to maximize power output
-      while maintaining structural integrity under high rotational speeds.
-    </p>
+          <p class="project-intro">
+            MATLAB-based turbine blade design considering aerodynamic performance and 3D printing constraints, validated through wind tunnel testing.
+          </p>
 
-    <h2>Objective</h2>
-    <p>
-      Optimize blade geometry to achieve peak efficiency near 1500 RPM while staying within material limits.
-    </p>
+          <div class="skill-pills">
+            <span>MATLAB</span>
+            <span>Fusion 360</span>
+            <span>Wind Tunnel Testing</span>
+            <span>3D Printing</span>
+          </div>
+        </div>
 
-    <h2>Approach</h2>
-    <p>
-      Developed a MATLAB aerodynamic model using TSR = 6, iterated pitch and taper, and validated
-      structural stresses using ANSYS simulations.
-    </p>
+        <a href="projects.html" class="back-link">← Back to Projects</a>
+      </div>
+    </section>
 
-    <h2>Results</h2>
-    <p>
-      Achieved improved predicted power output while maintaining stresses below PLA failure limits.
-    </p>
+    <!-- OBJECTIVE -->
+    <section class="content-section project-section">
+      <h2>Objective</h2>
+
+      <p>
+        As part of MAE 4272: Fluids and Heat Transfer Laboratory course, my team was tasked with designing a wind turbine blade capable of maximizing power output under fixed wind tunnel operating conditions. We were constrained by a 6-inch blade length, a prescribed hub geometry, and a material flexural strength limit of 55 MPa for Accura PLA. The design also needed to remain structurally stable below the system’s maximum safe rotational speed of ~2000 RPM. Our goal was to optimize aerodynamic performance while ensuring that the blade would not enter unsafe free-spin conditions during operation.
+      </p>
+    </section>
+
+    <!-- DESIGN PROCESS -->
+    <section class="content-section project-section">
+      <h2>Design Process</h2>
+
+      <p>
+        We built a MATLAB-based aerodynamic and structural model to iterate on twist distribution, chord taper, and predicted torque. To account for overshoot, we optimized the system to perform ideally at 1500RPM. Using NACA 4412 baseline geometry as a starting point, we computed aerodynamic torque, root bending stress, and free-spin RPM. The model revealed that free-spin stress exceedance was the likely failure mode, so our design iterations focused on reducing root bending moment while improving power generation efficiency. The final tuned design reflected adjustments to twist and taper that balanced aerodynamic loading with structural integrity.
+      </p>
+
+      <div class="project-figure-grid two-up">
+        <div class="project-figure placeholder-figure">
+          <div class="figure-placeholder">Photo of MATLAB stress plot</div>
+        </div>
+
+        <div class="project-figure placeholder-figure">
+          <div class="figure-placeholder">Photo of MATLAB chord twist plots</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTING -->
+    <section class="content-section project-section">
+      <h2>Testing and Performance</h2>
+
+      <p>
+        We tested the blade across four wind tunnel frequencies (8–11 Hz; corresponds to 4.6-6.3m/s). For each test, we increased the torque brake voltage in increments until the rotor stalled, collecting RPM and electrical power data at each step. The resulting power–RPM curves showed that the blade consistently produced measurable power across all frequencies, achieving a peak of 1.33 W at 1664 RPM at a wind speed of 6.3 m/s. Across all tests, the average maximum power was 0.712 W at approximately 1557 RPM, demonstrating good agreement between design predictions and real-world performance.
+      </p>
+
+      <div class="project-figure placeholder-figure wide-figure">
+        <div class="figure-placeholder">Photo of power curves</div>
+      </div>
+    </section>
+
+    <!-- CHALLENGES -->
+    <section class="content-section project-section">
+      <h2>Challenges and Insights</h2>
+
+      <p>
+        At higher tunnel frequencies, the turbine became difficult to stabilize due to sudden accelerations and torque spikes, revealing system-level constraints not fully captured by the MATLAB model. The torque brake exhibited coarse resolution, preventing fine control near the peak operating region, and aerodynamic efficiency at high TSR pushed the rotor toward free-spin conditions. These discrepancies highlighted the importance of modeling real torque brake limits and incorporating losses at the hub and blade tip. If we had more time, we would have liked to refine the MATLAB model to make less assumptions, such as accounting for losses at the tip through vortex shedding. Overall, the blade met the performance objectives, but its real behavior was governed as much by system limitations as by aerodynamic design.
+      </p>
+    </section>
+
+    <!-- CONTRIBUTIONS -->
+    <section class="content-section project-section">
+      <h2>My Contributions</h2>
+
+      <p>
+        I focused on developing and refining the MATLAB design model, tuning twist and taper parameters to reduce bending stress while preserving aerodynamic efficiency. I also helped plan and run the wind tunnel experiments, performed power-RPM data processing, and contributed to interpreting discrepancies between theoretical and experimental torque predictions.
+      </p>
+    </section>
+
+    <!-- FIGURES -->
+    <section class="content-section project-section">
+      <h2>Figures</h2>
+
+      <div class="project-figure-grid two-up">
+        <div class="project-figure placeholder-figure">
+          <div class="figure-placeholder">Photo of blade CAD</div>
+        </div>
+
+        <div class="project-figure placeholder-figure">
+          <div class="figure-placeholder">Photo of hub CAD</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH -->
+    <section class="content-section project-section">
+      <h2>Technologies Used</h2>
+
+      <div class="skill-pills">
+        <span>Autodesk Fusion</span>
+        <span>MATLAB</span>
+      </div>
+    </section>
 
   </main>
 </body>
