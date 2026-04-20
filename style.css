@@ -673,3 +673,13 @@ a {
   height: auto;
   display: block;
 }
+
+
+
+.project-img-half {
+  width: 50%;
+  max-width: 600px;  /* keeps it from getting too big */
+  height: auto;
+  display: block;
+  margin-top: 24px;
+}
