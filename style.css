@@ -655,7 +655,7 @@ a {
 .project-figure-grid.two-up img {
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* 👈 key line */
+  object-fit: contain;   /* 👈 key line */
 }
 
 .wide-figure img {
