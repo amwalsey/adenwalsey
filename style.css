@@ -683,3 +683,16 @@ a {
   display: block;
   margin-top: 24px;
 }
+
+.project-list-text {
+  margin: 0 0 20px;
+  padding-left: 22px;
+  max-width: 780px;
+}
+
+.project-list-text li {
+  margin: 0 0 10px;
+  font-size: 1.12rem;
+  line-height: 1.6;
+  color: var(--text);
+}
