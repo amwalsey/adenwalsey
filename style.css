@@ -693,3 +693,30 @@ a {
   line-height: 1.6;
   color: var(--text);
 }
+
+
+
+
+.project-figure-grid.square-two-up {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 780px;
+  margin-top: 36px;
+}
+
+.project-figure-grid.square-two-up .project-figure {
+  aspect-ratio: 1 / 1;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-figure-grid.square-two-up img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
