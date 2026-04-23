@@ -646,16 +646,14 @@ a {
   max-width: 780px;
 }
 
-/* make both image containers same height */
 .project-figure-grid.two-up .project-figure {
-  height: 260px;   /* 👈 adjust this */
+  height: auto;   /* 👈 let images define height */
 }
 
-/* make images fill that height cleanly */
 .project-figure-grid.two-up img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;   /* 👈 key line */
+  height: auto;   /* 👈 no forced stretching */
+  object-fit: contain;
 }
 
 .wide-figure img {
