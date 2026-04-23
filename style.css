@@ -647,17 +647,16 @@ a {
 }
 
 .project-figure-grid.two-up .project-figure {
-  height: auto;   /* 👈 let images define height */
+  height: auto;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.03);
 }
 
 .project-figure-grid.two-up img {
   width: 100%;
-  height: auto;   /* 👈 no forced stretching */
+  height: auto;
   object-fit: contain;
-}
-
-.wide-figure img {
-  max-width: 600px;
+  display: block;
 }
 
 
