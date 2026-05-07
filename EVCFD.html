@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electric Vehicle Body CFD Optimization — Aden Walsey</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page project-page">
+
+    <section class="content-section project-hero-section">
+      <div class="project-header">
+        <div>
+          <p class="project-meta">MAE 6910 · Computational Fluid Dynamics</p>
+          <h1>Electric Vehicle Body CFD Optimization</h1>
+          <p class="project-intro">
+            CFD-driven design study focused on reducing aerodynamic drag through vehicle body streamlining and rear-wake control.
+          </p>
+
+          <div class="skill-pills">
+            <span>ANSYS Fluent</span>
+            <span>CFD</span>
+            <span>Aerodynamics</span>
+            <span>Mesh Refinement</span>
+            <span>Design Iteration</span>
+          </div>
+
+          <div class="project-hero-image">
+            <img src="assets/cfd-refined-side.jpg" alt="Refined electric vehicle body design" />
+          </div>
+        </div>
+
+        <a href="projects.html" class="back-link">
+          <span>←</span> Back to Projects
+        </a>
+      </div>
+    </section>
+
+    <section class="content-section project-section">
+      <h2>Objective</h2>
+
+      <p>
+        Design and evaluate an electric vehicle body using CFD to reduce aerodynamic drag while maintaining practical geometric constraints. The project focused on understanding how body shape, rear taper, and wake behavior affect drag and vehicle efficiency.
+      </p>
+
+      <div class="project-figure wide-figure">
+        <img
+          src="assets/cfd-refined-side.jpg"
+          alt="Refined electric vehicle body side dimensions"
+          class="project-img-full"
+        />
+      </div>
+    </section>
+
+    <section class="content-section project-section">
+      <h2>Simulation Setup</h2>
+
+      <p>
+        The model used incompressible, steady-state airflow with a symmetry assumption across the vehicle width. Boundary conditions included a 27 m/s velocity inlet, pressure outlet, and moving ground plane. A k-ω GEKO turbulence model was used, with drag and lift coefficient monitors tracked over 200 iterations.
+      </p>
+
+      <p>
+        A tetrahedral mesh was generated with boundary-layer refinement near the car body to better capture near-wall flow behavior. A target Y+ value of approximately 50 was used to estimate the first cell height.
+      </p>
+
+      <div class="project-figure wide-figure">
+        <img
+          src="assets/cfd-mesh.jpg"
+          alt="Refined CFD mesh around vehicle body"
+          class="project-img-full"
+        />
+      </div>
+    </section>
+
+    <section class="content-section project-section">
+      <h2>Design Exploration</h2>
+
+      <p>
+        The initial design produced a noticeable wake region behind the vehicle, contributing to pressure drag and motivating a smoother rear-end geometry. The refined design increased vehicle length from 5.0 m to 5.6 m and used a more gradual rear taper to keep flow attached longer and reduce wake size.
+      </p>
+
+      <div class="project-figure-grid two-up">
+        <div class="project-figure">
+          <img
+            src="assets/cfd-initial-velocity.jpg"
+            alt="Initial design velocity contour"
+            class="project-img-full"
+          />
+        </div>
+
+        <div class="project-figure">
+          <img
+            src="assets/cfd-refined-velocity.jpg"
+            alt="Refined design velocity contour"
+            class="project-img-full"
+          />
+        </div>
+      </div>
+
+      <div class="project-figure-grid two-up">
+        <div class="project-figure">
+          <img
+            src="assets/cfd-initial-pressure.jpg"
+            alt="Initial design pressure contour"
+            class="project-img-full"
+          />
+        </div>
+
+        <div class="project-figure">
+          <img
+            src="assets/cfd-refined-pressure.jpg"
+            alt="Refined design pressure contour"
+            class="project-img-full"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section project-section">
+      <h2>Results</h2>
+
+      <p>
+        The refined design reduced drag coefficient from 0.32 to 0.29, representing an approximate 9% improvement. Lift coefficient also decreased slightly from 0.27 to 0.26. While the reduction was smaller than expected, the results confirmed that rear-body streamlining can reduce flow separation and pressure drag.
+      </p>
+
+      <ul class="project-list-text">
+        <li>Reduced drag coefficient from 0.32 to 0.29.</li>
+        <li>Reduced lift coefficient from 0.27 to 0.26.</li>
+        <li>Improved rear flow attachment through a longer, smoother taper.</li>
+        <li>Reduced but did not eliminate the low-pressure wake behind the vehicle.</li>
+      </ul>
+
+      <div class="project-figure-grid two-up">
+        <div class="project-figure">
+          <img
+            src="assets/cfd-cd-plot.jpg"
+            alt="Refined design drag coefficient plot"
+            class="project-img-full"
+          />
+        </div>
+
+        <div class="project-figure">
+          <img
+            src="assets/cfd-cl-plot.jpg"
+            alt="Refined design lift coefficient plot"
+            class="project-img-full"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section project-section">
+      <h2>Limitations and Next Steps</h2>
+
+      <p>
+        The study was limited by steady-state assumptions, turbulence model limitations, mesh resolution, and uncertainty in near-wall Y+ behavior. Future work would include a mesh independence study, improved Y+ monitoring, transient simulations, and more aggressive rear-end optimization.
+      </p>
+    </section>
+
+  </main>
+</body>
+</html>
