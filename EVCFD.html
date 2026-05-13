@@ -68,17 +68,19 @@
         Simulations were performed in ANSYS Fluent using the k-ω GEKO turbulence model, which is suited for complex separated flows and external aerodynamic analysis. A tetrahedral mesh with refined near-wall inflation layers was generated to better resolve the boundary layer around the car body. Appropriate Y+ values were estimated to improve near-wall turbulence modeling and boundary layer accuracy. Residuals, drag coefficient monitors, and lift coefficient monitors were tracked over approximately 200 iterations to assess convergence and solution stability.
       </p>
 
-      <div class="project-figure" style="display: flex; gap: 24px; justify-content: center; align-items: center;">
+      <div class="project-figure wide-figure">
         <img
           src="assets/CFDEV/cfdmesh.jpg"
           alt="CFD mesh"
-          class="project-img-half"
+          class="project-img-full"
         />
+      </div>
 
+      <div class="project-figure wide-figure">
         <img
           src="assets/CFDEV/cfdmeshcut.jpg"
           alt="CFD mesh section view"
-          class="project-img-half"
+          class="project-img-full"
         />
       </div>
     </section>
@@ -115,20 +117,22 @@
       </div>
 
       <p>
-        After approximately 200 iterations, the initial design converged to a drag coefficient of \(C_D = 0.32\) and a lift coefficient of \(C_L = 0.27\). The results indicated that the rear geometry generated noticeable aerodynamic losses due to wake formation and turbulent recirculation behind the vehicle. Although lift coefficient was not the primary focus of the study, the moderate upward lift force also suggested room for improvement in overall aerodynamic stability.
+        After approximately 200 iterations, the initial design converged to a drag coefficient of C<sub>D</sub> = 0.32 and a lift coefficient of C<sub>L</sub> = 0.27. The results indicated that the rear geometry generated noticeable aerodynamic losses due to wake formation and turbulent recirculation behind the vehicle. Although lift coefficient was not the primary focus of the study, the moderate upward lift force also suggested room for improvement in overall aerodynamic stability.
       </p>
 
-      <div class="project-figure" style="display: flex; gap: 24px; justify-content: center; align-items: center;">
+      <div class="project-figure wide-figure">
         <img
           src="assets/CFDEV/cfdinitcd.jpg"
           alt="Initial drag coefficient plot"
-          class="project-img-half"
+          class="project-img-full"
         />
+      </div>
 
+      <div class="project-figure wide-figure">
         <img
           src="assets/CFDEV/cfdinitcl.jpg"
           alt="Initial lift coefficient plot"
-          class="project-img-half"
+          class="project-img-full"
         />
       </div>
     </section>
@@ -175,20 +179,22 @@
       </p>
 
       <p>
-        The refined geometry reduced drag coefficient from \(C_D = 0.32\) to \(C_D = 0.29\), representing an approximate 9% reduction in aerodynamic drag. Lift coefficient also decreased slightly from \(C_L = 0.27\) to \(C_L = 0.26\). Although the reduction was smaller than initially expected, the results confirmed that smoother rear-body transitions and a more gradual taper can reduce wake intensity and improve aerodynamic efficiency.
+        The refined geometry reduced drag coefficient from C<sub>D</sub> = 0.32 to C<sub>D</sub> = 0.29, representing an approximate 9% reduction in aerodynamic drag. Lift coefficient also decreased slightly from C<sub>L</sub> = 0.27 to C<sub>L</sub> = 0.26. Although the reduction was smaller than initially expected, the results confirmed that smoother rear-body transitions and a more gradual taper can reduce wake intensity and improve aerodynamic efficiency.
       </p>
 
-      <div class="project-figure" style="display: flex; gap: 24px; justify-content: center; align-items: center;">
+      <div class="project-figure wide-figure">
         <img
           src="assets/CFDEV/cfdnewcd.jpg"
           alt="Refined drag coefficient plot"
-          class="project-img-half"
+          class="project-img-full"
         />
+      </div>
 
+      <div class="project-figure wide-figure">
         <img
           src="assets/CFDEV/cfdnewcl.jpg"
           alt="Refined lift coefficient plot"
-          class="project-img-half"
+          class="project-img-full"
         />
       </div>
     </section>
