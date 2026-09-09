@@ -2,156 +2,165 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Parametric Carbon Wheel Aerodynamic Optimization | Aden Walsey</title>
+  <title>Parametric Carbon Wheel Aerodynamic Optimization — Aden Walsey</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html" class="logo">Aden Walsey</a>
+  <main class="page project-page">
 
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
+    <!-- HEADER -->
+
+    <div class="project-header">
+
+      <div>
+        <p class="project-meta">
+          Princeton CarbonWorks · Aerodynamic R&amp;D · Summer 2026
+        </p>
+
+        <h1>
+          Parametric Carbon Wheel Aerodynamic Optimization
+        </h1>
+
+        <p class="project-intro">
+          Parametric rim optimization using SolidWorks and CFD to reduce
+          aerodynamic drag across race-relevant yaw conditions.
+        </p>
+
+        <div class="skill-pills">
+          <span>SolidWorks</span>
+          <span>CFD</span>
+          <span>Aerodynamics</span>
+          <span>Parametric Design</span>
+        </div>
+      </div>
+
+      <a href="projects.html" class="back-link">
+        <span>←</span> Back
+      </a>
+
     </div>
-  </nav>
 
 
-  <!-- Project Header -->
-  <header class="project-header">
+    <!-- COVER IMAGE -->
 
-    <h1>Parametric Carbon Wheel Aerodynamic Optimization</h1>
-
-    <div class="project-tags">
-      <span>SolidWorks</span>
-      <span>CFD</span>
-      <span>Aerodynamics</span>
-      <span>Parametric Design</span>
-    </div>
-
-  </header>
-
-
-  <!-- Cover Image -->
-  <section class="project-hero">
-    <img
-      src="assets/pcwcfdcover.jpg"
-      alt="CFD simulation of a 95 mm carbon bicycle wheel">
-  </section>
-
-
-  <!-- Objective -->
-  <section class="project-section">
-
-    <h2>Objective</h2>
-
-    <p>
-      Improve the aerodynamic performance of an existing 95 mm carbon wheel
-      as part of R&amp;D for the wheelset used by sponsored athletes at the
-      Ironman World Championships in Kona, Hawaii. A parametric CAD model was
-      developed in SolidWorks to systematically modify the rim profile, with
-      the existing 95 mm wheel geometry used as a baseline for comparison.
-      Each iteration was evaluated using CFD to determine how changes in rim
-      geometry affected drag across different yaw conditions.
-    </p>
-
-  </section>
-
-
-  <!-- Parametric Design -->
-  <section class="project-section">
-
-    <h2>Parametric Design Approach</h2>
-
-    <p>
-      Initial rim profiles were developed using elliptical geometry and NACA
-      airfoil principles to guide the overall shape and location of maximum
-      width. The profile near the tire was also designed to more closely match
-      the tire curvature, creating a smoother transition between the tire and
-      rim. These initial concepts provided a starting point for later
-      parametric optimization.
-    </p>
-
-    <p>
-      The rim profile was controlled through parameters defining maximum
-      width, maximum-width position, shoulder length, and inner-profile
-      length. These parameters were varied systematically to determine which
-      features had the greatest influence on aerodynamic performance. This
-      study showed that shoulder length and maximum-width position were
-      particularly influential, with shorter shoulders and a maximum-width
-      position near 40% of the rim depth producing the strongest results.
-    </p>
-
-  </section>
-
-
-  <!-- CFD Method -->
-  <section class="project-section">
-
-    <h2>CFD &amp; Optimization Method</h2>
-
-    <p>
-      Each design iteration was evaluated using CFD from 0–10° yaw to capture
-      aerodynamic performance across realistic crosswind conditions.
-      Yaw-angle weightings derived from conditions on the Kona course were
-      applied to calculate a weighted-average drag for each geometry. This
-      allowed designs to be compared based on expected race conditions rather
-      than performance at a single yaw angle.
-    </p>
-
-    <div class="project-image">
+    <figure class="project-figure wide-figure">
       <img
-        src="assets/pcwcfdstreamlines.jpg"
-        alt="CFD streamlines around the optimized carbon wheel">
-    </div>
-
-  </section>
-
-
-  <!-- Results -->
-  <section class="project-section">
-
-    <h2>Results &amp; Insights</h2>
-
-    <p>
-      The optimized geometry reduced drag across the full tested yaw range
-      compared with the baseline 95 mm wheel, with the largest improvements
-      occurring at higher yaw angles. Weighted-average drag decreased from
-      approximately 0.625 N to 0.401 N, representing a 35.9% reduction from
-      the baseline geometry.
-    </p>
-
-    <p>
-      The parametric study also showed that optimizing at 0° yaw alone did not
-      necessarily produce the strongest overall design. Shoulder length and
-      maximum-width position became increasingly influential at higher yaw
-      angles, demonstrating the importance of optimizing wheel geometry
-      across the range of conditions expected during racing.
-    </p>
-
-    <!-- Add baseline vs. optimized drag plot here once exported -->
-    <!--
-    <div class="project-image">
-      <img
-        src="assets/pcwcfdresults.jpg"
-        alt="Baseline and optimized 95 mm wheel drag across yaw angles">
-    </div>
-    -->
-
-  </section>
+        src="assets/pcwcfdcover.jpg"
+        alt="CFD visualization of carbon wheel aerodynamics"
+        class="project-img-full"
+      />
+    </figure>
 
 
-  <!-- Back to Projects -->
-  <div class="project-back">
-    <a href="projects.html">← Back to Projects</a>
-  </div>
+    <!-- OBJECTIVE -->
 
+    <section class="content-section project-section">
+
+      <h2>Objective</h2>
+
+      <p>
+        Improve the aerodynamic performance of an existing 95 mm carbon wheel
+        as part of R&amp;D for the wheelset used by sponsored athletes at the
+        Ironman World Championships in Kona, Hawaii. A parametric CAD model was
+        developed in SolidWorks to systematically modify the rim profile, with
+        the existing 95 mm wheel geometry used as a baseline for comparison.
+        Each iteration was evaluated using CFD to determine how changes in rim
+        geometry affected drag across different yaw conditions.
+      </p>
+
+    </section>
+
+
+    <!-- PARAMETRIC DESIGN -->
+
+    <section class="content-section project-section">
+
+      <h2>Parametric Design Approach</h2>
+
+      <p>
+        Initial rim profiles were developed using elliptical geometry and NACA
+        airfoil principles to guide the overall shape and location of maximum
+        width. The profile near the tire was also designed to more closely match
+        the tire curvature, creating a smoother transition between the tire and
+        rim. These initial concepts provided a starting point for later
+        parametric optimization.
+      </p>
+
+      <p>
+        The rim profile was controlled through parameters defining maximum
+        width, maximum-width position, shoulder length, and inner-profile
+        length. These parameters were varied systematically to determine which
+        features had the greatest influence on aerodynamic performance. This
+        study showed that shoulder length and maximum-width position were
+        particularly influential, with shorter shoulders and a maximum-width
+        position near 40% of the rim depth producing the strongest results.
+      </p>
+
+    </section>
+
+
+    <!-- CFD -->
+
+    <section class="content-section project-section">
+
+      <h2>CFD &amp; Optimization Method</h2>
+
+      <p>
+        Each design iteration was evaluated using CFD from 0–10° yaw to capture
+        aerodynamic performance across realistic crosswind conditions.
+        Yaw-angle weightings derived from conditions on the Kona course were
+        applied to calculate a weighted-average drag for each geometry. This
+        allowed designs to be compared based on expected race conditions rather
+        than performance at a single yaw angle.
+      </p>
+
+      <figure class="project-figure wide-figure">
+        <img
+          src="assets/pcwcfdstreamlines.jpg"
+          alt="CFD streamlines around the carbon wheel"
+          class="project-img-full"
+        />
+
+        <figcaption class="figure-caption">
+          CFD visualization of flow around the wheel at yaw.
+        </figcaption>
+      </figure>
+
+    </section>
+
+
+    <!-- RESULTS -->
+
+    <section class="content-section project-section">
+
+      <h2>Results &amp; Insights</h2>
+
+      <p>
+        The optimized geometry reduced drag across the full tested yaw range
+        compared with the baseline 95 mm wheel, with the largest improvements
+        occurring at higher yaw angles. Weighted-average drag decreased from
+        approximately 0.625 N to 0.401 N, representing a 35.9% reduction from
+        the baseline geometry.
+      </p>
+
+      <p>
+        The parametric study also showed that optimizing at 0° yaw alone did not
+        necessarily produce the strongest overall design. Shoulder length and
+        maximum-width position became increasingly influential at higher yaw
+        angles, demonstrating the importance of optimizing wheel geometry
+        across the range of conditions expected during racing.
+      </p>
+
+    </section>
+
+
+  </main>
 
 </body>
 
