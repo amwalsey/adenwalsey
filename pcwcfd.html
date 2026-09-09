@@ -1,67 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Parametric Carbon Wheel Aerodynamic Optimization — Aden Walsey</title>
-
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
   <main class="page project-page">
 
-    <!-- HEADER -->
+    <!-- HERO -->
 
-    <div class="project-header">
+    <section class="content-section project-hero-section">
+      <div class="project-header">
 
-      <div>
-        <p class="project-meta">
-          Princeton CarbonWorks · Aerodynamic R&amp;D · Summer 2026
-        </p>
+        <div>
+          <p class="project-meta">
+            Princeton CarbonWorks · Aerodynamic R&amp;D · Summer 2026
+          </p>
 
-        <h1>
-          Parametric Carbon Wheel Aerodynamic Optimization
-        </h1>
+          <h1>Parametric Carbon Wheel Aerodynamic Optimization</h1>
 
-        <p class="project-intro">
-          Parametric rim optimization using SolidWorks and CFD to reduce
-          aerodynamic drag across race-relevant yaw conditions.
-        </p>
+          <p class="project-intro">
+            Parametric rim optimization using SolidWorks and CFD to reduce
+            aerodynamic drag across race-relevant yaw conditions.
+          </p>
 
-        <div class="skill-pills">
-          <span>SolidWorks</span>
-          <span>CFD</span>
-          <span>Aerodynamics</span>
-          <span>Parametric Design</span>
+          <div class="skill-pills">
+            <span>SolidWorks</span>
+            <span>CFD</span>
+            <span>Aerodynamics</span>
+            <span>Parametric Design</span>
+          </div>
+
+          <div class="project-hero-image">
+            <img
+              src="assets/pcwcfdcover.jpg"
+              alt="Parametric carbon wheel CFD visualization"
+              style="width: 40%;"
+            />
+          </div>
         </div>
+
+        <a href="projects.html" class="back-link">
+          <span>←</span> Back to Projects
+        </a>
+
       </div>
-
-      <a href="projects.html" class="back-link">
-        <span>←</span> Back
-      </a>
-
-    </div>
-
-
-    <!-- COVER IMAGE -->
-
-    <figure class="project-figure wide-figure">
-      <img
-        src="assets/pcwcfdcover.jpg"
-        alt="CFD visualization of carbon wheel aerodynamics"
-        class="project-img-full"
-      />
-    </figure>
+    </section>
 
 
     <!-- OBJECTIVE -->
 
     <section class="content-section project-section">
-
       <h2>Objective</h2>
 
       <p>
@@ -73,14 +65,12 @@
         Each iteration was evaluated using CFD to determine how changes in rim
         geometry affected drag across different yaw conditions.
       </p>
-
     </section>
 
 
-    <!-- PARAMETRIC DESIGN -->
+    <!-- PARAMETRIC DESIGN APPROACH -->
 
     <section class="content-section project-section">
-
       <h2>Parametric Design Approach</h2>
 
       <p>
@@ -101,14 +91,12 @@
         particularly influential, with shorter shoulders and a maximum-width
         position near 40% of the rim depth producing the strongest results.
       </p>
-
     </section>
 
 
-    <!-- CFD -->
+    <!-- CFD & OPTIMIZATION -->
 
     <section class="content-section project-section">
-
       <h2>CFD &amp; Optimization Method</h2>
 
       <p>
@@ -120,25 +108,23 @@
         than performance at a single yaw angle.
       </p>
 
-      <figure class="project-figure wide-figure">
+      <div
+        class="project-figure wide-figure"
+        style="display: flex; justify-content: center;"
+      >
         <img
           src="assets/pcwcfdstreamlines.jpg"
-          alt="CFD streamlines around the carbon wheel"
+          alt="CFD streamlines around the carbon wheel at yaw"
           class="project-img-full"
+          style="width: 70%; object-fit: contain;"
         />
-
-        <figcaption class="figure-caption">
-          CFD visualization of flow around the wheel at yaw.
-        </figcaption>
-      </figure>
-
+      </div>
     </section>
 
 
     <!-- RESULTS -->
 
     <section class="content-section project-section">
-
       <h2>Results &amp; Insights</h2>
 
       <p>
@@ -156,12 +142,9 @@
         angles, demonstrating the importance of optimizing wheel geometry
         across the range of conditions expected during racing.
       </p>
-
     </section>
 
 
   </main>
-
 </body>
-
 </html>
