@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modular Aerobar Positioning System — Aden Walsey</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="page project-page">
+
+    <!-- HERO -->
+    <section class="content-section project-hero-section">
+      <div class="project-header">
+
+        <div>
+          <p class="project-meta">
+            Princeton CarbonWorks · Lidl-Trek · Mechanical Design · Summer 2026
+          </p>
+
+          <h1>Modular Aerobar Positioning System</h1>
+
+          <p class="project-intro">
+            Modular aerobar stack redesign for Lidl-Trek WorldTour time trial bikes,
+            replacing custom 3D-printed aluminum parts with standardized,
+            CNC-machinable components.
+          </p>
+
+          <div class="skill-pills">
+            <span>SolidWorks</span>
+            <span>Mechanical Design</span>
+            <span>DFM</span>
+            <span>CNC Machining</span>
+          </div>
+
+          <div class="project-hero-image">
+            <img
+              src="assets/pcwttcover.jpg"
+              alt="Lidl-Trek rider in wind tunnel testing"
+              style="width: 40%;"
+            />
+          </div>
+        </div>
+
+        <a href="projects.html" class="back-link">
+          <span>←</span> Back to Projects
+        </a>
+
+      </div>
+    </section>
+
+    <!-- OBJECTIVE -->
+    <section class="content-section project-section">
+      <h2>Objective</h2>
+
+      <p>
+        Redesign the aerobar positioning system for the Lidl-Trek professional
+        cycling team, intended for use at WorldTour races such as the Tour de France.
+        The existing system relied on custom 3D-printed aluminum components tailored
+        to individual riders, making each configuration expensive to manufacture and
+        difficult to modify. The goal was to develop a lighter, modular system using
+        standardized components while maintaining rider-specific positioning.
+      </p>
+    </section>
+
+    <!-- DESIGN APPROACH -->
+    <section class="content-section project-section">
+      <h2>Design Approach</h2>
+
+      <p>
+        The system is being designed in SolidWorks around universal components and
+        interchangeable spacers, with each spacer controlling a specific aspect of
+        rider fit. Separate spacers provide height, lateral position, fore-aft
+        position, and aerobar pitch angle adjustment. By combining these components,
+        different rider positions can be achieved without designing and manufacturing
+        a unique stack for each athlete.
+      </p>
+
+      <div
+        class="project-figure wide-figure"
+        style="display: flex; justify-content: center;"
+      >
+        <img
+          src="assets/pcwttassy.jpg"
+          alt="SolidWorks assembly of modular aerobar positioning system"
+          class="project-img-full"
+          style="width: 70%; object-fit: contain;"
+        />
+      </div>
+    </section>
+
+    <!-- MANUFACTURING -->
+    <section class="content-section project-section">
+      <h2>Manufacturing &amp; Design Iteration</h2>
+
+      <p>
+        The redesign shifts the system from custom metal additive manufacturing
+        toward standardized, CNC-machinable components. Part geometry,
+        manufacturability, assembly, and reconfigurability are being considered
+        throughout the design process to reduce manufacturing costs while maintaining
+        the adjustability required for individual rider positions.
+      </p>
+
+      <div
+        class="project-figure wide-figure"
+        style="display: flex; justify-content: center;"
+      >
+        <img
+          src="assets/pcwttcut.jpg"
+          alt="Cross-sectional view of modular aerobar positioning system"
+          class="project-img-full"
+          style="width: 70%; object-fit: contain;"
+        />
+      </div>
+    </section>
+
+    <!-- NEXT STEPS -->
+    <section class="content-section project-section">
+      <h2>Next Steps</h2>
+
+      <p>
+        The system is being actively iterated based on feedback from Lidl-Trek
+        engineers and race mechanics, particularly around rider positioning,
+        assembly, and practical race-bike setup. This feedback is being incorporated
+        into each design revision as the system moves toward a final architecture.
+      </p>
+
+      <p>
+        The next step is to analyze rider fit data across the team to further reduce
+        part count. If common configurations emerge, such as a majority of riders
+        using a similar stack height, multiple spacer combinations can be consolidated
+        into universal, single-body components. This would retain adjustment where
+        needed while reducing the total part count and weight of the system.
+      </p>
+    </section>
+
+  </main>
+</body>
+</html>
