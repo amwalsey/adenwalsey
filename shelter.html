@@ -38,9 +38,9 @@
 
           <div class="project-hero-image">
             <img
-              src="assets/shelter/sheltercover.png"
-              alt="Modular sustainable bus shelter prototype"
-              style="width: 85%;"
+              src="assets/shelter/shelterrender.png"
+              alt="Rendering of the modular sustainable bus shelter"
+              style="width: 85%; height: auto;"
             />
           </div>
         </div>
@@ -62,13 +62,31 @@
         Design a structurally reliable, manufacturable base connection capable of transferring the shelter's weight and environmental loads into the foundation. The connection needed to withstand 84.9 kN of combined dead, snow, and ice loading and 21.6 kN of lateral wind loading, based on Ithaca's ASCE design conditions of 69 psf snow, 1 inch of ice accumulation, and 110 mph winds. Beyond structural performance, the design needed to minimize visible hardware, use COTS parts where possible, and withstand long-term exposure to moisture, salt, and freezing temperatures.
       </p>
 
+      <div class="project-figure-grid two-up">
+
+        <div class="project-figure">
+          <img
+            src="assets/shelter/sheltergeometry.png"
+            alt="Shelter structural geometry"
+          />
+        </div>
+
+        <div class="project-figure">
+          <img
+            src="assets/shelter/sheltermodule.png"
+            alt="Triangular wooden shelter module"
+          />
+        </div>
+
+      </div>
+
       <div
         class="project-figure wide-figure"
         style="display: flex; justify-content: center;"
       >
         <img
-          src="assets/shelter/shelterassemble.png"
-          alt="Shelter assembly"
+          src="assets/shelter/sheltertop.png"
+          alt="Top view of the modular shelter"
           class="project-img-full"
           style="width: 85%; object-fit: contain;"
         />
@@ -118,9 +136,6 @@
             src="assets/shelter/sheltercad.png"
             alt="CAD model of the shelter base connection"
           />
-          <p class="figure-caption">
-            CAD assembly of the base-ground connection.
-          </p>
         </div>
 
         <div class="project-figure">
@@ -128,9 +143,6 @@
             src="assets/shelter/shelterinventor1.png"
             alt="Autodesk Inventor model of the base connection"
           />
-          <p class="figure-caption">
-            Base connection design detail.
-          </p>
         </div>
 
       </div>
@@ -143,7 +155,7 @@
           src="assets/shelter/shelterinventor2.png"
           alt="Additional CAD view of the shelter connection"
           class="project-img-full"
-          style="width: 65%; object-fit: contain;"
+          style="width: 75%; object-fit: contain;"
         />
       </div>
     </section>
@@ -155,31 +167,35 @@
       <h2>Finite Element Analysis (FEA)</h2>
 
       <p>
-        Imported the final CAD assembly of one base connection into ANSYS Mechanical to evaluate structural performance under the calculated environmental loads. I applied vertical and horizontal loading vectors to the L-bracket, incorporated wind as a pressure boundary condition as a horizontal vector across the exposed surfaces, and included bolt pretension to simulate clamping between the bracket and wooden modules. I evaluated von Mises stress, total deformation, and localized stress concentrations throughout the assembly. The analysis predicted a maximum deformation of approximately 0.2 mm, primarily along the outer edge of the bracket, but revealed significant stress concentrations around the bolts, indicating that the load transfer through the bolted connections required further investigation.
+        I imported the final CAD assembly of one base connection into ANSYS Mechanical to evaluate structural performance under the calculated environmental loads. I applied vertical and horizontal loading vectors to the L-bracket, incorporated wind as a pressure boundary condition as a horizontal vector across the exposed surfaces, and included bolt pretension to simulate clamping between the bracket and wooden modules. I evaluated von Mises stress, total deformation, and localized stress concentrations throughout the assembly. The analysis predicted a maximum deformation of approximately 0.2 mm, primarily along the outer edge of the bracket, but revealed significant stress concentrations around the bolts, indicating that the load transfer through the bolted connections required further investigation.
       </p>
 
-      <div class="project-figure-grid two-up">
+      <!-- FEA IMAGE 1 -->
 
-        <div class="project-figure">
-          <img
-            src="assets/shelter/shelterfea1.png"
-            alt="ANSYS finite element analysis result"
-          />
-          <p class="figure-caption">
-            ANSYS Mechanical simulation of the base connection.
-          </p>
-        </div>
+      <div
+        class="project-figure wide-figure"
+        style="display: flex; justify-content: center;"
+      >
+        <img
+          src="assets/shelter/shelterfea1.png"
+          alt="ANSYS Mechanical finite element analysis results"
+          class="project-img-full"
+          style="width: 85%; object-fit: contain;"
+        />
+      </div>
 
-        <div class="project-figure">
-          <img
-            src="assets/shelter/shelterfea2.png"
-            alt="ANSYS stress distribution in the bolted connection"
-          />
-          <p class="figure-caption">
-            Localized stress concentrations in the connection.
-          </p>
-        </div>
+      <!-- FEA IMAGE 2 -->
 
+      <div
+        class="project-figure wide-figure"
+        style="display: flex; justify-content: center;"
+      >
+        <img
+          src="assets/shelter/shelterfea2.png"
+          alt="ANSYS Mechanical localized stress concentrations"
+          class="project-img-full"
+          style="width: 85%; object-fit: contain;"
+        />
       </div>
     </section>
 
