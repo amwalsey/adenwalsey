@@ -723,21 +723,66 @@ a {
 
 
 
-/* Match Blog heading to CV heading */
-#blog {
-  padding: 80px 0;
-  scroll-margin-top: 80px;
+/* BLOG */
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
 }
 
-#blog h2 {
-  font-size: 72px;
+.blog-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 36px 0;
+
+  text-decoration: none;
+  color: inherit;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.blog-row:last-child {
+  border-bottom: none;
+}
+
+.blog-row:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.blog-text {
+  max-width: 650px;
+}
+
+.blog-row h3 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+  line-height: 1.1;
   font-weight: 500;
   letter-spacing: -0.04em;
-  line-height: 1.1;
-  margin: 0 0 40px;
 }
 
-/* Remove extra spacing between Blog and CV */
-#blog .blog-posts:empty {
-  display: none;
+.blog-row p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.blog-date {
+  font-size: 0.95rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .blog-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 }
