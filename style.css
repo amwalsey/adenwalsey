@@ -720,3 +720,24 @@ a {
   object-fit: contain;
   display: block;
 }
+
+
+
+/* Match Blog heading to CV heading */
+#blog {
+  padding: 80px 0;
+  scroll-margin-top: 80px;
+}
+
+#blog h2 {
+  font-size: 72px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin: 0 0 40px;
+}
+
+/* Remove extra spacing between Blog and CV */
+#blog .blog-posts:empty {
+  display: none;
+}
